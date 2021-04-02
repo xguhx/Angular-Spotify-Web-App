@@ -18,7 +18,7 @@
           [(ngModel)]="user.userName"
           #loginName="ngModel"
         />
-        <mat-error *ngIf="loginName.invalid"
+        <mat-error *ngIf="loginName.invalid && loginForm.touched"
           >Please provide a valid user name</mat-error
         > </mat-form-field
       ><br />
@@ -33,7 +33,7 @@
           [(ngModel)]="user.password"
           #loginPassword="ngModel"
         />
-        <mat-error *ngIf="loginPassword.invalid"
+        <mat-error *ngIf="loginPassword.invalid && loginForm.touched"
           >Please provide a valid password</mat-error
         > </mat-form-field
       ><br />

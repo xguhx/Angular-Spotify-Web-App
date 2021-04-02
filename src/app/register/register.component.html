@@ -17,7 +17,7 @@
           [(ngModel)]="registerUser.userName"
           #registerName="ngModel"
         />
-        <mat-error *ngIf="registerName.invalid"
+        <mat-error *ngIf="registerName.invalid && registerForm.touched"
           >Please provide a valid email address</mat-error
         > </mat-form-field
       ><br />
@@ -31,7 +31,7 @@
           [(ngModel)]="registerUser.password"
           #registerPassword="ngModel"
         />
-        <mat-error *ngIf="registerPassword.invalid"
+        <mat-error *ngIf="registerPassword.invalid && registerForm.touched"
           >Please provide a valid password</mat-error
         > </mat-form-field
       ><br />
@@ -45,7 +45,7 @@
           [(ngModel)]="registerUser.password2"
           #registerPassword2="ngModel"
         />
-        <mat-error *ngIf="registerPassword2.invalid"
+        <mat-error *ngIf="registerPassword2.invalid && registerForm.touched"
           >Please provide a valid password</mat-error
         > </mat-form-field
       ><br />
