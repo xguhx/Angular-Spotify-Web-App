@@ -44,13 +44,6 @@ export class LoginComponent implements OnInit, OnDestroy {
     );
   }
 
-  setLoading(element) {
-    if (this.loading) {
-      element.textContent = 'Processing Request';
-      element.disabled = true;
-    }
-  }
-
   ngOnDestroy(): void {
     if (this.sub) this.sub.unsubscribe();
   }

@@ -10,6 +10,7 @@ import { NgForm } from '@angular/forms';
 })
 export class RegisterComponent implements OnInit, OnDestroy {
   constructor(private auth: AuthService) {}
+
   registerUser: RegisterUser = { userName: '', password: '', password2: '' };
 
   warning = null;
@@ -17,13 +18,6 @@ export class RegisterComponent implements OnInit, OnDestroy {
   loading = false;
 
   sub;
-
-  setLoading(element) {
-    if (this.loading) {
-      element.textContent = 'Processing Request';
-      element.disabled = true;
-    }
-  }
 
   ngOnInit(): void {}
 

@@ -42,10 +42,10 @@
         color="accent"
         type="submit"
         [disabled]="loading"
-        (click)="setLoading($event.target)"
       >
         <mat-icon>login</mat-icon>
-        <span>&nbsp;&nbsp;&nbsp;Login</span>
+        <span *ngIf="!loading">&nbsp;&nbsp;&nbsp;Login</span>
+        <span *ngIf="loading"> &nbsp;&nbsp;&nbsp;Processing Request</span>
       </button>
       &nbsp;&nbsp;
       <button mat-raised-button color="primary" routerLink="/register">

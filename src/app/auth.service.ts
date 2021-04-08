@@ -29,10 +29,10 @@ export class AuthService {
     const token = localStorage.getItem('access_token');
 
     if (token) {
-      console.log('token exists');
+      // console.log('Token exists!');
       return true;
     } else {
-      console.log('no token');
+      //  console.log('No token!');
       return false;
     }
   }
