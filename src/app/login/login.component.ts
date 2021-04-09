@@ -40,7 +40,7 @@ export class LoginComponent implements OnInit, OnDestroy {
       (err) => {
       	console.log('HTTP Error: ', err);
         this.loading = false;
-        this.warning = err.error.message;
+        this.warning = err.error;
       }
     );
   }
