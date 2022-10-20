@@ -1,18 +1,35 @@
-# About this Web App
+# Angular Spotify Web App
 
-This app was made using Angular and MongoDB together with the Spotify Web API.
+> This is a fully responsive App built using Angular and Angular Materials
 
-This web App contains: 
-- MongoDB connection to enable Registration and Favorites to work.
-- Spotify API connection to enable dynamic display of data
-- Fully responsiveness
-- JWT in a Web API, route guards, http interceptors and localstorage in the Angular app. 
+> This Web App will connect to the Spotify API and display the latest albums.
 
+> The user will be able to select an album and listen to a 30 second preview of the songs.
 
-# How to use this app
+> User can Download the song preview.
 
--Register your account
--Browse and listen to you favorite Artist
--Save your favorite songs
+> User can change the song preview playback speed.
 
+> User can add the song preview to its favorites.
+
+> User can remove song preview from its favorites.
+
+---
+
+### This App was written using TypeScript and contains:
+    
+   - Angular
+   - Auth0/Angular-JWT
+   - Rxjs
+   - Tslib
+   - Zone.js
+   - Jasmine 
+   - Karma
+   - Tslint
+
+---
+
+### Would you like to contribute to this project?
+
+> Send me a message with your idea and we can work on it together!
 
